@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>--- TODO ---</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/fontawesome.min.css"
+    />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- Leave those next 4 lines if you care about users using IE8 -->
@@ -18,15 +24,149 @@
     <![endif]-->
   </head>
   <body>
+    <!-- Navigation-->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"
+      id="mainNav"
+    >
+      <div class="container px-4">
+        <a class="navbar-brand" href="#page-top">ECHOUAGE</a
+        ><button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="/">Accueil</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Liste</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Header-->
+    <header class="bg-primary bg-gradient text-white">
+      <div class="container px-4 text-center">
+        <h1 class="fw-bolder">Lorem ipsum</h1>
+        <p class="lead">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />At
+          eaque maxime ratione perferendis hic totam modi.
+        </p>
+        <a class="btn btn-lg btn-light" href="#">Liste</a>
+      </div>
+    </header>
 
+    <section class="bg-light" id="echouage">
+      <div class="container px-4">
+        <div class="row gx-4 justify-content-center">
+          <div class="col-lg-8">
+            <h2>Liste échouages</h2>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut
+              optio velit inventore, expedita quo laboriosam possimus ea
+              consequatur vitae, doloribus consequuntur ex. Nemo assumenda
+              laborum vel, labore ut velit dignissimos.
+            </p>
 
+            <form class="row g-3" method="POST">
+              <div class="col-auto">
+                <select
+                  class="form-select"
+                  aria-label="Choisir une date"
+                  name="date"
+                >
+                  <option selected value="">Année</option>
+                  <option value="2022">2022</option>
+                </select>
+              </div>
 
-    <!-- TODO: Here goes your content! -->
+              <div class="col-auto">
+                <select
+                  class="form-select"
+                  aria-label="Chosisir une espèce"
+                  name="espece"
+                >
+                  <option selected value="">Veullez choisir</option>
+                  <option value="">Lorem</option>
+                </select>
+              </div>
 
+              <div class="col-auto">
+                <select
+                  class="form-select"
+                  aria-label="Chosisir une zone"
+                  name="zone"
+                >
+                  <option selected value="">Veuillez choisir</option>
+                  <option value="">lorem</option>
+                </select>
+              </div>
 
+              <div class="col-auto ms-auto me-0">
+                <button type="submit" class="btn btn-primary mb-3">
+                  Filtrer
+                </button>
+              </div>
+            </form>
+
+            <table class="table table-striped">
+              <thead class="bg-primary text-white">
+                <tr>
+                  <th scope="col" class="id">N°</th>
+                  <th scope="col" class="Date">Name</th>
+                  <th scope="col" class="label">Desc</th>
+                </tr>
+              </thead>
+              <tbody style="border: 1px solid black">
+                <tr style="border: 1px solid black">
+                  <td class="id">ID</td>
+                  <td class="id">NAME</td>
+                  <td class="label">LOREM</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <nav aria-label="Page navigation example">
+              <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#"><<</a></li>
+
+                <li class="page-item">
+                  <a class="page-link" href="#">lorem </a>
+                </li>
+
+                <li class="page-item"><a class="page-link" href="#">>></a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact section-->
+
+    <footer class="py-5 bg-dark">
+      <div class="container px-4">
+        <p class="m-0 text-center text-white">Copyright &copy; CIR2 2023</p>
+      </div>
+    </footer>
+    <!-- Bootstrap core JS-->
 
     <!-- Including Bootstrap JS (with its jQuery dependency) so that dynamic components work -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   </body>
 </html>
